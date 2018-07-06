@@ -32,11 +32,11 @@ def hello():
 
 @app.route('/Result')
 def back():
-    return redirect(url_for("my_form"));
+    return redirect(url_for("my_form"))
 
 
 
-
- app.debug = True
- port = int(os.environ.get("PORT", 5000))
- app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
