@@ -36,5 +36,5 @@ def back():
 
 
 
-app.run(debug = True)
+app.run(debug = True, port=80)
 #print (my_form_post())
