@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for
+import os 
 
 test = []
 app = Flask(__name__)
@@ -36,5 +37,6 @@ def back():
 
 
 
-app.run(debug = True, port=80)
-#print (my_form_post())
+ app.debug = True
+ port = int(os.environ.get("PORT", 5000))
+ app.run(host='0.0.0.0', port=port)
