@@ -60,6 +60,7 @@
     padding: 25px;
     margin-top: 500px;
     margin-left: 20px;
+    position: center;
 }
 
 .button:hover {background-color: #3e8e41}
@@ -81,7 +82,7 @@
     box-shadow: 0 5px rgb(48, 48, 48);
     padding: 25px;
     margin-top: 350px;
-    margin-left: 700px;
+    margin-left: 625px;
 }
 
 .button2:hover {background-color: #373837}
@@ -99,7 +100,7 @@
 .result_text{
     font-family: 'Trebuchet MS';
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 100px;
     text-align: center;
     color: blanchedalmond;
 }
@@ -118,7 +119,6 @@ function goBack() {
 
     </script>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Result</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -132,7 +132,8 @@ function goBack() {
             <div>
                 <h4 class = "result_text">We believe that Radiant has a {{ number }}% win rate!</h4>
             </div>
+        </div>   
             <button class ="button2" onclick = "goBack()">Go Back</button>
-        </div>            
+                 
     </body>
 </html>
